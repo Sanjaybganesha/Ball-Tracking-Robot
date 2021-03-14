@@ -1,0 +1,8 @@
+<launch>
+
+	<include file="$(find turtlebot_bringup)/launch/minimal.launch" />
+	<include file="$(find astra_launch)/launch/astra.launch">
+	</inclde>
+        <node pkg="PutnalA" name="PutnalA" type="balltrack.py"/>
+	<node pkg="PutnalA" name="PutnalA" type="movebase.py"/>
+</launch>
